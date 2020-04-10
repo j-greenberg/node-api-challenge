@@ -40,13 +40,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+A: Middleware and Routing.
+
 - [ ] Describe Middleware?
+
+A: Middleware is a function you can use to alter or reject the HTTP request. You can run validation, send additional headers, or add additional security features. 
 
 - [ ] Describe a Resource?
 
+A: A resource is generally what the client is trying to retrieve from the database through an API call, usually an object, an array of objects, or some other kind of database information. 
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+A: The API can return a 200 or 201 message. 
+
 - [ ] How can we partition our application into sub-applications?
+
+A: Through routing onto separate .js files. 
 
 ## Minimum Viable Product
 
@@ -77,11 +87,11 @@ The description of the structure and extra information about each _resource_ sto
 
 | Field       | Data Type | Metadata                                                                                         |
 | ----------- | --------- | ------------------------------------------------------------------------------------------------ |
-| id          | number    | no need to provide it when creating posts, the database will automatically generate it.          |
-| project_id  | number    | required, must be the id of an existing project.                                                 |
-| description | string    | up to 128 characters long, required.                                                             |
+| id   | number    | no need to provide it when creating posts, the database will automatically generate it.          |
+| project_id  | number    | required, must be the id of an existing project.       |
+| description | string    | up to 128 characters long, required.           |
 | notes       | string    | no size limit, required. Used to record additional notes or requirements to complete the action. |
-| completed   | boolean   | used to indicate if the action has been completed, not required                                  |
+| completed   | boolean   | used to indicate if the action has been completed, not required  |
 
 ### Database Persistence Helpers
 
